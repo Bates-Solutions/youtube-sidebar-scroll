@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Sidebar Scroll for YouTube",
+  "version": "1.0.0",
+  "description": "Scroll the recommended videos on a YouTube watch page without scrolling the video out of view.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "css": ["styles.css"],
+      "run_at": "document_start"
+    }
+  ]
+}

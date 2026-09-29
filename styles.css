@@ -1,0 +1,10 @@
+/* Only applies in the side-by-side layout (video left, recommendations right). */
+ytd-watch-flexy[is-two-columns_] #secondary {
+  position: sticky;
+  top: var(--ytd-masthead-height, 56px);
+  align-self: flex-start;
+  max-height: calc(100vh - var(--ytd-masthead-height, 56px));
+  overflow-y: auto;
+  overscroll-behavior: contain; /* reaching the end of the list won't scroll the page */
+  scrollbar-width: thin;
+}
