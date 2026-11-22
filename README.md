@@ -43,7 +43,6 @@ of the list doesn't scroll the page.
 
 - If YouTube changes its page structure, the stylesheet may stop matching. Please open an issue if
   it does.
-- Not affiliated with or endorsed by YouTube or Google.
 
 ## Privacy
 
@@ -63,7 +62,7 @@ Contributions are welcome. See
 
 ## License
 
-[MIT](LICENSE).
+[MIT](LICENSE). Not affiliated with or endorsed by YouTube or Google.
 
 ---
 
