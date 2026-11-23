@@ -7,7 +7,7 @@
 
 # Sidebar Scroll for YouTube
 
-A Chrome extension that scrolls YouTube's recommended videos without scrolling the video out of view.
+A Chrome and Firefox extension that scrolls YouTube's recommended videos without scrolling the video out of view.
 
 [![License: MIT](https://img.shields.io/github/license/Bates-Solutions/youtube-sidebar-scroll)](LICENSE)
 
@@ -24,7 +24,7 @@ permissions.
 
 ## Install
 
-It isn't in the Chrome Web Store yet. To install it from source:
+It isn't in the Chrome Web Store or on Firefox Add-ons yet. To install it from source:
 
 1. Download this repo (**Code**, then **Download ZIP**) and unzip it, or `git clone` it.
 2. Open `chrome://extensions` and turn on **Developer mode** (top right).
@@ -32,6 +32,15 @@ It isn't in the Chrome Web Store yet. To install it from source:
 4. Refresh any open YouTube tabs.
 
 It works in any Chromium browser: Chrome, Edge, Brave and others.
+
+In Firefox (140 or later):
+
+1. Open `about:debugging#/runtime/this-firefox`.
+2. Choose **Load Temporary Add-on** and select `manifest.json` in the folder.
+3. Refresh any open YouTube tabs.
+
+Firefox removes a temporary add-on when it restarts. It stays installed once it's on Firefox
+Add-ons.
 
 ## How it works
 
