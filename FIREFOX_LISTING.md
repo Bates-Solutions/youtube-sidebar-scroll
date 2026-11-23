@@ -40,6 +40,9 @@ watching while you browse.
 It is a single stylesheet: no JavaScript, no tracking, and no access to anything beyond
 www.youtube.com.
 
+If the sidebar still scrolls with the page, check that the add-on is allowed to run on
+www.youtube.com: in about:addons, open the add-on, then **Permissions**.
+
 Not affiliated with or endorsed by YouTube or Google.
 
 ## Categories (up to 2)
@@ -49,7 +52,10 @@ Not affiliated with or endorsed by YouTube or Google.
 
 ## Tags
 
-youtube, sidebar, scroll
+youtube
+
+AMO tags come from a fixed list (`https://addons.mozilla.org/api/v5/addons/tags/`); `sidebar` and
+`scroll` aren't on it.
 
 ## Support
 
