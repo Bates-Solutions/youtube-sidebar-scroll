@@ -13,7 +13,7 @@ A Chrome and Firefox extension that scrolls YouTube's recommended videos without
 
 On a YouTube watch page, the recommendations column gets its own scrollbar, so you can keep
 watching while you browse what's next. It is a single stylesheet: no JavaScript and no
-permissions.
+permissions beyond access to www.youtube.com.
 
 ## Features
 
@@ -33,14 +33,22 @@ It isn't in the Chrome Web Store or on Firefox Add-ons yet. To install it from s
 
 It works in any Chromium browser: Chrome, Edge, Brave and others.
 
-In Firefox (140 or later):
+Chrome may list an "Unrecognized manifest key 'browser_specific_settings'" warning on the
+extension's card. That key is for Firefox; the extension works regardless.
+
+In Firefox desktop (140 or later):
 
 1. Open `about:debugging#/runtime/this-firefox`.
 2. Choose **Load Temporary Add-on** and select `manifest.json` in the folder.
 3. Refresh any open YouTube tabs.
 
-Firefox removes a temporary add-on when it restarts. It stays installed once it's on Firefox
-Add-ons.
+If the sidebar still scrolls with the page, check that the add-on is allowed to run on
+www.youtube.com (**Manage Extension**, then **Permissions**): Firefox lets you turn that off.
+
+Firefox removes a temporary add-on when it restarts. To keep it installed before it's on Firefox
+Add-ons, sign it for yourself with `npx web-ext sign --channel=unlisted` (it needs a free
+Firefox Add-ons API key), or use Firefox Developer Edition or Nightly with
+`xpinstall.signatures.required` set to `false` in `about:config`.
 
 ## How it works
 
